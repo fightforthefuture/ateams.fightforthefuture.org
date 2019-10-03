@@ -222,3 +222,15 @@ sharing buttons
 .sharing-container svg {
   fill: white;
 }
+
+#jobs > section {
+  display:none;
+}
+#jobs > section.is-visible {
+  display: block;
+}
+
+.subnav a.active {
+  color:dimgrey; 
+  text-decoration: none;
+}

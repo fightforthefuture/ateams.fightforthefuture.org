@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A-Teams (activism teams) are a new way to change the world. Here we explain how to join one, start one, and apply for funding. If you're looking for an effective way to tackle massive political and social challenges and win, read this.">
+    <meta property="author" content="Fight for the Future">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://www.fightforthefuture.org/ateams/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Terrified about Trump? Quit your job, start an A-Team. We might just fund it." />
+    <meta property="og:description" content="If you want to change the world, or defend it, this is something you should read." />
+    <meta property="og:image" content="https://www.fightforthefuture.org/ateams/img/Facebook-share-updated.png" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@fightfortheftr">
+    <meta name="twitter:creator" content="@fightfortheftr">
+    <meta name="twitter:title" content="Terrified about Trump? Start an A-Team. We might just fund it.">
+    <meta name="twitter:description" content="Start a team that can change the world. Apply for $15,000 in funding for your first 4 weeks.">
+    <meta name="twitter:image" content="https://www.fightforthefuture.org/ateams/img/twitter-share-updated.png">
+
+    <title>A-Teams: strategy (and funding) for changing the world.</title>
+    <!-- styles -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Montserrat:400,700","Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      
+      const hash = location.hash;
+
+      window.onload = function() {
+        const hash = location.hash;
+        if ( hash != '' ){
+          showSection(hash.substr(1));
+        }
+        
+        const subnav_links = document.querySelectorAll('.subnav a');
+        subnav_links.forEach(function(element){
+          element.onclick = function(){
+            showSection(this.dataset.section);
+            if(history.pushState) {
+              history.pushState(null, null, '#'+this.dataset.section);
+            }
+            else {
+              location.hash = '#'+this.dataset.section;
+            }
+            return false;
+          }
+        }); 
+      }
+
+
+
+      function showSection(hash){
+        const sections = document.querySelectorAll('#jobs section');
+        
+        for(i=0; i < sections.length; i++){
+          var section = sections[i];
+          section.classList.remove('is-visible');
+        }
+
+        const current = document.getElementById(hash);
+        if ( current != undefined ){
+          current.classList.add('is-visible');
+        }
+
+        const subnav_links = document.querySelectorAll('.subnav a');
+        for( i=0; i < subnav_links.length; i++ ){
+          var link = subnav_links[i];
+          if ( link.dataset.section == hash ){
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');  
+          }
+        }
+
+        return false;
+      }
+
+    </script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="nav">
+          <a href="index.html"><img class="logo" src="img/ateams-logo.png" alt="A Teams logo"></a>
+          <span class="donate">
+          <a href="https://donate.fightforthefuture.org/">DONATE</a>
+          </span>
+        </div>
+        <h1 class="headline">Current Job Openings</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="subnav">
+          <a href="#political-strategist" data-section="political-strategist" class="active">Political Strategist Co-founder</a> | 
+          <a href="#technical" data-section="technical">Technical Co-founder</a> | 
+          <a href="#design" data-section="design">Design Co-founder</a>
+        </div>
+        <div id="jobs">
+          <section id="political-strategist" class="is-visible">
+            <h1>A-Teams Political Strategist Co-founder</h1>
+            <p><i>Political operative (lobbyist/staffer/PR) who is ready to play the outside game</i></p>
+
+            <p>Our new initiative A-Teams aims to create new, small teams that can achieve surprising political wins in the issue area of their choice, by combining political strategy and Internet savvy.</p>
+
+            <p>We are seeking the founding political strategist and campaign director for one such "A-Team.” As the A-Team's political strategist, you will focus on a political issue, such as immigration reform, climate change, prison reform, health care, or voting rights. You and your A-Team will run a campaign to pass strong policy on your issue or stop a disastrous bill from becoming law.</p>
+
+            <p>You should have a strong, insider-level understanding of the political process, but with an outsider's optimism, creativity, and ability to speak about issues in ways that resonate with other outsiders, such as the public or any key constituency you need to move. At the core of all of your work, you seek to figure out how to climb over any barriers in your way, problem solve to make what is needed to capture the debate, and know how to bring millions of people to bear on an issue.</p>
+
+            <p>You should also have some political attitudes about power, freedom, fairness, or caring for others that you carry with you since your teenage years. This should come through in your writing; you should have a strong, authentic voice.</p>
+
+            <p>You will work alongside a creative, multidisciplinary software developer/designer with all of the skills needed to leverage the Internet to reach and organize millions. We'll work with you both to develop and execute plans.</p>
+
+
+            <h2>What you'll do</h2>
+            <ul>
+              <li> Provoke a robust public debate in chosen political area by creating content (writing, video, web) and new realities (such as sign-on letters, events, rallies, protests, alliances, etc.) that support your position.</li>
+              <li> Look for cases where the public wants a certain policy, but where corruption or political inertia is holding it back.</li>
+              <li> Identify the forces and alliances that, if mobilized, could break through the corruption/inertia and achieve a political win.</li>
+              <li> Mobilize those forces and alliances, again and again, honing your skill over time.</li>
+              <li> Generate social and traditional media attention that advances your position, organizing events and building strategic relationships as needed.</li>
+              <li> Throughout every stage in this process, you're constantly looking for ways to use the Internet, politics, PR, and policy to increase the power and efficacy of your small team.</li>
+              <li> Recruit additional A-Teams leaders and volunteers as needed.</li>
+            </ul>
+
+            <h2>What we're looking for</h2>
+            <ul>
+              <li> You have a mind for campaigning and everything it takes to win, including how to build power on the issue, who we need with us, messaging that will move people, and the steps to get you there. And you want to lead others to victory.</li>
+              <li>You have a strong sense of how state and federal politics works.</li>
+              <li> You ideally have experience working on issue-based advocacy campaigns.</li>
+              <li> You have a strong sense of how state and federal politics works.</li>
+              <li> That said, you can think outside the box, see opportunities that others write off, and make new things happen.</li>
+              <li> You understand convention but aren't bound by it.</li>
+              <li> You can get things done, but believe plans are made to break and change.</li>
+              <li> You see opportunity to break the status quo of the political process all the time.</li>
+              <li> You write beautifully, especially for an online audience.</li>
+              <li> Political inside jokes and gossip bore you.</li>
+              <li> You get beltway politics, but would rather be speaking to the rest of the country/world.</li>
+              <li> You enjoy unplugging from news and Twitter to work on something big.</li>
+              <li> You're a bit of a social chameleon. You feel at home in many circles. You can quickly see how people in a certain scene talk and understand the world, and you can fit right in while still holding on to and spreading your perspective.</li>
+              <li> You hold seemingly contradictory political beliefs. Sometimes people on your own political "side” might terrify you, while the other "side” seems more wise.</li>
+              <li> You get more excited reading classics of fiction or political theory than watching House of Cards. (House of Cards is not a mortal sin—many of our most respected colleagues do it!—but you're much broader.)</li>
+              <li> You can be crafty and devious. Maybe you were a troublemaker in high school.</li>
+              <li> For most of your life you've felt compelled to right wrongs or challenge arbitrary authority.</li>
+              <li> Your life has intersected with a large political uprising of some kind.</li>
+              <li> You've maybe been arrested before, for doing something you will never regret.</li>
+              <li> You are a fluent English speaker and live in the US.</li>
+            </ul>
+
+            <h2>Details:</h2>
+            <p>This is a full time position with Fight for the Future. The salary range is $70-100K annually, depending on experience with benefits including full health care, partially covered dental benefits, and training and mentoring with senior staff. If a contract set-up works better for you, we can discuss that too.</p>
+          </section>
+
+          <section id="technical">
+            <h1>A-Teams Technical Co-founder</h1>
+            <p><i>Full stack developer, product-crafter, troublemaker for a better world.</i></p>
+
+            <p>Fight for the Future is a small Internet freedom activism team with big victories to its credit, such as organizing the protests that defeated SOPA/PIPA, and winning net neutrality rules in 2014. </p>
+ 
+            <p>Our new initiative A-Teams aims to create new, two-person teams that can achieve surprising political wins in the issue area of their choice, by combining political strategy and Internet savvy.</p>
+ 
+            <p>We are seeking the founding technical leader for one such "A-Team.” As the  technical leader, you will focus on a political issue, such as climate change, prison reform, health care, or voting rights. You and your A-Team will run a campaign to pass strong policy on your issue or stop a disastrous bill from becoming law. </p>
+ 
+            <p>You should be supremely comfortable making and launching novel and creative additions to people's online life, whether for web, mobile, or walled gardens like Facebook. You should love the rush of launching something on a whim, and seeing it blow up in places like Product Hunt, HN, or reddit.</p>
+ 
+            <p>You should also have strong political attitudes about power, freedom, fairness, or caring for others.</p>
+ 
+            <p>You will work alongside a similarly high-functioning and creative person with concrete experience shifting political reality, e.g. a former Congressional staffer, political campaigner, or lobbyist. We'll work with you both to develop and execute plans. </p>
+
+            <h2>What you'll do</h2>
+            <ul>
+              <li>Make a lot of awesome responsive websites, quickly.</li>
+              <li>Creatively use tech to mobilize people around specific political objectives.</li>
+              <li>Make a lot of simple, novel MVPs to support these plans.</li>
+              <li>Self QA and polish until they're good enough, launch and fix issues on the fly.</li>
+              <li>Make awesome moments in the history of the Internet and politics.</li>
+              <li>Slowly build a new organization or movement (if it goes well!)</li>
+            </ul>
+
+            <h2>What we're looking for</h2>
+            <ul>
+              <li>You can write clear instructions, prompts, and documentation.</li>
+              <li>You can speak with a strong, credible voice online.</li>
+              <li>You can design in code, whenever you need to.</li>
+              <li>Your portfolio site looks great.</li>
+              <li>You can make modern forms, buttons and layouts in your sleep.</li>
+              <li>You can easily grasp what makes a product valuable/awesome and work from there.</li>
+              <li>You're experienced working remotely (this position may be remote).</li>
+              <li>You quickly understand and internalize what your team or company is driving for.</li>
+              <li>You've felt compelled to right wrongs or challenge arbitrary authority. Possibly a troublemaker in high school or a handful for your parents. </li>
+              <li>You pivot easily. Dropping / throwing away work doesn't bother you, if the current path makes more sense.</li>
+              <li>You're pragmatic and flexible in your habits.</li>
+              <li>You intuitively seek the simplest possible solutions, on the fly, and are good at simplifying scope to fit deadlines, saying "no” to features or—even better—"but what if I did it this other, much simpler way?”</li>
+              <li>You can dial your engineering approach between "quick & dirty” and "careful & prudent”, depending on the context.</li>
+              <li>You can match technical possibilities (such as an action tool or online stunt) to a given political objective or strategy, and pick the best tech response to a given situation.</li>
+              <li>You have a desire to use your skills and smarts to make the world more kind and fair</li>
+              <li>You are a fluent English speaker and live in the US.</li>
+            </ul>
+
+            <p>This is a full time position. Compensation is market rate and commensurate with skills and experience either through a contract rate or a salary (with full health care and dental benefits), depending on what works best for you. </p>
+          </section>
+
+          <section id="design">
+            <h1>A-Teams Design Co-founder</h1>
+            <p><i>Web designer / front-end developer for high impact political activism.</i></p>
+
+            <p>Our new initiative A-Teams aims to create new, small teams that can achieve surprising political wins on the issue area of their choice, by combining political strategy and Internet savvy.</p>
+
+            <p>We are seeking a Design Co-founder for our next "A-Team”, to play a lead role in launching and co-leading a small activist team running a campaign to win on issues like immigrant rights, criminal justice reform, strengthening democratic representation, or climate change.</p>
+
+            <p>Working closely with a political co-founder, you and your A-Team will build the web and mobile pieces of a campaign to pass strong policy on your issue or stop a disastrous bill from becoming law.  Your role will be to explain complex issues—and get people to take effective political action—using design, copy, and code. We're looking for someone with very strong visual and interaction design skills who can move from mockups to HTML/CSS, or design directly in code. Experience with modern front-end frameworks is a plus.</p>
+
+            <p>You should be comfortable making and launching novel and creative additions to people's online life with strong use of layout, color, and typography, whether for web, mobile, or social media. You should love the rush of launching a site on a whim, and seeing it blow up in places like Product Hunt, HN, or reddit.</p>
+
+            <p>In addition to your design skills you should also have strong political attitudes about power, freedom, fairness, or caring for others that shows in your visual work; your work should be strong, immersive, and authentic.</p>
+
+            <p>You will work alongside a similarly high-functioning and creative person with concrete experience on campaigns so significant experience in politics or activism is not required. The team at Fight for the Future will work with you both to develop and execute plans.</p>
+
+            <h2>What you'll do</h2>
+
+            <ul>
+              <li>Design and build websites (sometimes straight to code) to tweak and deploy rapidly</li>
+              <li>Make images and animation for social media</li>
+              <li>Use copy, color, layout, typography and shared visual vocabulary (images, icons, effects) to convey complex political ideas and emotions.</li>
+              <li>Build simple forms and sometimes more complex interactions to mobilize people around specific political objectives (i.e. design high-converting landing pages to get people to do stuff!)</li>
+              <li>Make awesome moments in the history of the Internet and politics.</li>
+              <li>Work closely with the political director to strategize and look for ways to use the Internet and politics to increase the power and efficacy of your small team.</li>
+              <li>Build a new organization or movement (if it goes well!)</li>
+            </ul>
+
+            <h2>What we're looking for</h2>
+            <ul>
+              <li>You can write clear instructions, prompts, and documentation.</li>
+              <li>You can speak with a strong, authentic, and credible voice online.</li>
+              <li>You can design straight to code, when needed.</li>
+              <li>Your portfolio site looks great.</li>
+              <li>You can make modern forms, buttons and layouts in your sleep.</li>
+              <li>You have some experience with animation.</li>
+              <li>You can easily grasp what makes a product valuable/awesome and work from there.</li>
+              <li>You're experienced working remotely.</li>
+              <li>You quickly understand and internalize what your team or company is driving for.</li>
+              <li>You've felt compelled to right wrongs or challenge arbitrary authority. Possibly a troublemaker in high school or a handful for your parents.</li>
+              <li>You're purpose-driven so you can pivot easily. Dropping / throwing away work doesn't bother you, if the new path makes more sense.</li>
+              <li>You're pragmatic and flexible in your habits.</li>
+              <li>You intuitively seek the simplest possible solutions, on the fly, and are good at simplifying scope to fit deadlines, saying "no” to features or—even better—"but what if I did it this other, much simpler way?”</li>
+              <li>You can dial your design and coding approach between "quick & dirty” and "careful & prudent”, depending on the context.</li>
+              <li>You can match styles and technical possibilities (such as an action tool or online stunt) to a given political objective or strategy, and pick the best tech response to a given situation.</li>
+              <li>You have a desire to use your skills and smarts to make the world more kind and fair.</li>
+            </ul>
+
+            <h2>Details:</h2>
+            <p>This is a full time position with Fight for the Future. The salary range is $70-100K annually, depending on experience. Benefits include health care, dental benefits, and training and mentoring with senior staff. If a contract set-up works better for you, we can discuss that too.</p>
+
+            <p>This is a remote position and candidates can based anywhere in the US. English fluency is required.</p>
+
+          </section>
+
+        </div>
+
+        <h2>To apply:</h2>
+        <p>Send a resume and cover letter to <a href="mailto:ateams@fightforthefuture.org">ateams@fightforthefuture.org</a>.</p>
+        <i style="font-style:italic">Fight for the Future is an equal opportunity and inclusive employer. FFTF does not and shall not discriminate on the basis of race, color, religion (creed), gender, gender expression, age, national origin (ancestry), disability, marital status, sexual orientation, or military status, in any of its activities or operations. We believe that a diverse staff enables us to better understand and serve our members, audience and community. Women, people of color, and members of low-income, disadvantaged, and LGBTQ communities are strongly encouraged to apply.</i>
+      </div>
+    </main>
+  </body>
+</html>
